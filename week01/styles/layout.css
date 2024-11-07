@@ -15,7 +15,7 @@
  
   .header {
     background-color: #333;
-    color: #fff;
+    color: #00ff00;
     padding: 1rem;
     text-align: center;
   }
@@ -23,14 +23,14 @@
   .navbar {
     display: flex;
     justify-content: center;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
   
   .navbar a {
     color: #fff;
     text-decoration: none;
     margin: 0 1rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     background-color: #555;
     border-radius: 5px;
   }
