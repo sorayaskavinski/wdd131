@@ -35,10 +35,14 @@ header h1{
     color: #ffff;
     padding: 12px; 
     background-color:#7327c0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .main-nav a:hover {
     background-color: #202121;
+    color: #ffffff; 
+    text-decoration: underline; 
+    transform: scale(1.05); 
 }
 
 
