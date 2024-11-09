@@ -80,6 +80,7 @@ main {
     text-align: justify;
 }
 .card-2 {
+    
     padding: 15px;
     background-color: #ffff;
     border-radius: 8px;
@@ -90,12 +91,20 @@ main {
     color: rgb(74, 7, 132);
     margin-top: 0%;
 }
+.card-2 li{
+    padding-top: 30px;
+}
+
 footer {
     display:grid;
     grid-template-columns: 830px;
     height: 60px;
     text-align: center;   
     margin-top: 5px;
+    margin-bottom: 5px;
     background-color:   rgb(231, 224, 243);
     color: rgb(42, 4, 71);
+}
+footer p{
+    margin-top: 0px;
 }
