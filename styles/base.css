@@ -20,7 +20,7 @@ header {
     margin-bottom: 5px;    
 }
 header h1{
-    color:rgba(46, 3, 80, 0.219);
+    color:#2E0350;
 }
 
 .main-nav {
@@ -74,6 +74,7 @@ main {
 }
 .card-profile{
     display:flex;
+    justify-content: space-between;
     text-align: justify;
     flex-direction: row-reverse;
     gap: 20px;
@@ -84,6 +85,8 @@ main {
     display: flex;
     margin-top: 30px;
     text-align: justify;
+    justify-content: space-between;
+    align-items: center;
 }
 .card-2 {
     
@@ -120,4 +123,21 @@ footer p{
     vertical-align: top;
     font-size: 15px;
 }
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;  
+    }
+    
+    .card-profile {
+        flex-direction: column;  
+        text-align: center; 
+    }
 
+    .main-nav {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+.main-nav a:focus,
+.card-2 li a:focus {
+    outline: 3px solid rgba(115, 39, 192, 0.992); 
+}
