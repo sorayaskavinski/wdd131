@@ -5,7 +5,7 @@ const hamburger = document.getElementById('hamburger');
 const navMenu = document.querySelector('nav ul');
 
 hamburger.addEventListener('click', () => {
-    const isOpen = navMenu.style.display === 'block';
-    navMenu.style.display = isOpen ? 'none' : 'block';
-    hamburger.textContent = isOpen ? '☰' : 'X';
+    const isVisible = navMenu.style.display === 'block';
+    navMenu.style.display = isVisible ? 'none' : 'block';
+    hamburger.textContent = isVisible ? '☰' : 'X';
 });
