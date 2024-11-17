@@ -34,15 +34,7 @@
     nav ul li a:hover {
         background-color: #555;
     }
-    
-    #hamburger {
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        color: #fff;
-        cursor: pointer;
-    }
-    
+        
     main {
         max-width: 90%;
         margin: 0 auto;
