@@ -1,7 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif; 
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -17,12 +15,20 @@ header {
     color: #fff;
 }
 
+header h1 {
+    margin: 0;
+}
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: none; 
+    flex-direction: column; 
+}
+
+nav ul li {
+    margin: 0;
 }
 
 nav ul li a {
@@ -32,7 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #111111;
+    background-color: #111;
 }
 
 #hamburger {
@@ -43,30 +49,30 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+main h2 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: #333;
+}
+
 main {
-    display: flex;    
+    display: flex;
+    flex-direction: column;
     align-items: center;
     max-width: 100%;
     margin: 0 auto;
     padding: 1rem;
-    flex-direction: column;
-}
-main h2{
-    padding-top: 1rem;
-    text-align: center;
-    margin-top: 0;
-    font-size: 2rem;    
 }
 
 .temples-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
     gap: 1rem;
 }
 
 figure {
     margin: 0;
-    padding: 0;
     text-align: center;
 }
 

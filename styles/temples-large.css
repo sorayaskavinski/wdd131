@@ -1,10 +1,12 @@
-@media screen and (min-width:500px){
-    
-    
+@media screen and (min-width: 500px) {
     nav ul {
-        display: flex;
+        display: flex; 
         justify-content: center;
         gap: 1rem;
+    }
+
+    #hamburger {
+        display: none; 
     }
 
     .temples-grid {
