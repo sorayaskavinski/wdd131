@@ -4,55 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 | Soraya Skavinski | Temple Picture Album</title>
-    <meta name="description" content="WDD131 - Picture Album - page to show my favorite picture temples">
+    <meta name="description" content="WDD131 - Picture Album - page to show my favorite temple pictures">
     <meta name="author" content="Soraya Skavinski">
-    <link rel="styles" href="styles/temples-large.css">
-    <link rel="styles" href="styles/temples.css">
-    <script src= "scripts/temples.js"defer></script>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="scripts/temples.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
         <button id="hamburger" aria-label="Menu">☰</button>
         <nav>
-            <a href="#" target="_blank">Home</a>
-            <a href="#" target="_blank">Old</a>
-            <a href="#" target="_blank">New</a>
-            <a href="#" target="_blank">Large</a>
-            <a href="#" target="_blank">Small</a>    
+            <ul>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">Old</a></li>
+                <li><a href="#" target="_blank">New</a></li>
+                <li><a href="#" target="_blank">Large</a></li>
+                <li><a href="#" target="_blank">Small</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <h2>Home</h2>
         <div class="temples-grid">
             <figure>
-                <img src="images/belem_brazil_temple_exterior.jpeg"alt="Temple Belem">
+                <img src="images/belem_brazil_temple_exterior.jpeg" alt="Temple Belem">
                 <figcaption>Temple Belem, Brazil</figcaption>
+            </figure>
+            <figure>
                 <img src="images/brasilia_brazil_temple_exterior.jpeg" alt="Temple Brasilia">
                 <figcaption>Temple Brasilia, Brazil</figcaption>
+            </figure>
+            <figure>
                 <img src="images/campinas_brazil_temple_lds.jpeg" alt="Temple Campinas">
                 <figcaption>Temple Campinas, Brazil</figcaption>
+            </figure>
+            <figure>
                 <img src="images/curitiba_brazil_temple.jpeg" alt="Temple Curitiba">
                 <figcaption>Temple Curitiba, Brazil</figcaption>
+            </figure>
+            <figure>
                 <img src="images/fortaleza_brazil_temple_lds.webp" alt="Temple Fortaleza">
                 <figcaption>Temple Fortaleza, Brazil</figcaption>
+            </figure>
+            <figure>
                 <img src="images/manaus_brazil_temple_lds.jpeg" alt="Temple Manaus">
                 <figcaption>Temple Manaus, Brazil</figcaption>
+            </figure>
+            <figure>
                 <img src="images/porto_alegre_brazil_temple_lds.webp" alt="Temple Porto Alegre">
                 <figcaption>Temple Porto Alegre, Brazil</figcaption>
+            </figure>
+            <figure>
                 <img src="images/recife_brazil_temple_lds.jpeg" alt="Temple Recife">
                 <figcaption>Temple Recife, Brazil</figcaption>
+            </figure>
+            <figure>
                 <img src="images/rio_de_janeiro_brazil_temple.jpeg" alt="Temple Rio de Janeiro">
                 <figcaption>Temple Rio de Janeiro, Brazil</figcaption>
+            </figure>
+            <figure>
                 <img src="images/sao_paulo_brazil_temple_lds.jpeg" alt="Temple Sao Paulo">
                 <figcaption>Temple Sao Paulo, Brazil</figcaption>
             </figure>
         </div>
     </main>
     <footer>
-        <p>&copy;<span id="year"></span> ✨Soraya Skavinski✨ Brazil</p>
+        <p>&copy; <span id="year"></span> ✨Soraya Skavinski✨ Brazil</p>
         <p id="lastModified"></p>
     </footer>
 </body>
