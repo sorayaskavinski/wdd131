@@ -1,11 +1,18 @@
 document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
+
+const lastModifiedDate = new Date(document.lastModified);
+document.getElementById('lastModified').textContent =
+    `Last Updated: ${lastModifiedDate.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    })}`;
 
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.querySelector('nav ul');
 
 hamburger.addEventListener('click', () => {
-    const isVisible = navMenu.style.display === 'block';
-    navMenu.style.display = isVisible ? 'none' : 'block';
-    hamburger.textContent = isVisible ? '☰' : 'X';
+    const isVisible = navMenu.classList.toggle('visible');
+    hamburger.setAttribute('aria-expanded', isVisible);
+    hamburger.textContent = isVisible ? 'X' : '☰';
 });

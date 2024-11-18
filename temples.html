@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 | Soraya Skavinski | Temple Picture Album</title>
-    <meta name="description" content="WDD131 - Picture Album - page to show my favorite temple pictures">
+    <meta name="description" content="WDD131 - Picture Album - page to show my favorite temple pictures in Brazil">
     <meta name="author" content="Soraya Skavinski">
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
@@ -15,62 +15,62 @@
     <header>
         <h1>Temple Album</h1>
         <button id="hamburger" aria-label="Menu">☰</button>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
-                <li><a href="#" target="_blank">Home</a></li>
-                <li><a href="#" target="_blank">Old</a></li>
-                <li><a href="#" target="_blank">New</a></li>
-                <li><a href="#" target="_blank">Large</a></li>
-                <li><a href="#" target="_blank">Small</a></li>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="old.html" target="_blank">Old</a></li>
+                <li><a href="new.html" target="_blank">New</a></li>
+                <li><a href="large.html" target="_blank">Large</a></li>
+                <li><a href="small.html" target="_blank">Small</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>Home</h2>
-        <div class="temples-grid">
+        <div class="temples-grid" id="temples-container">
             <figure>
-                <img src="images/belem_brazil_temple_exterior.jpeg" alt="Temple Belem">
+                <img src="images/belem_brazil_temple_exterior.jpeg" alt="Temple Belem" loading="lazy">
                 <figcaption>Temple Belem, Brazil</figcaption>
             </figure>
             <figure>
-                <img src="images/brasilia_brazil_temple_exterior.jpeg" alt="Temple Brasilia">
+                <img src="images/brasilia_brazil_temple_exterior.jpeg" alt="Temple Brasilia" loading="lazy">
                 <figcaption>Temple Brasilia, Brazil</figcaption>
             </figure>
             <figure>
-                <img src="images/campinas_brazil_temple_lds.jpeg" alt="Temple Campinas">
+                <img src="images/campinas_brazil_temple_lds.jpeg" alt="Temple Campinas" loading="lazy">
                 <figcaption>Temple Campinas, Brazil</figcaption>
             </figure>
             <figure>
-                <img src="images/curitiba_brazil_temple.jpeg" alt="Temple Curitiba">
+                <img src="images/curitiba_brazil_temple.jpeg" alt="Temple Curitiba" loading="lazy">
                 <figcaption>Temple Curitiba, Brazil</figcaption>
             </figure>
             <figure>
-                <img src="images/fortaleza_brazil_temple_lds.webp" alt="Temple Fortaleza">
+                <img src="images/fortaleza_brazil_temple_lds.webp" alt="Temple Fortaleza" loading="lazy">
                 <figcaption>Temple Fortaleza, Brazil</figcaption>
             </figure>
             <figure>
-                <img src="images/manaus_brazil_temple_lds.jpeg" alt="Temple Manaus">
+                <img src="images/manaus_brazil_temple_lds.jpeg" alt="Temple Manaus" loading="lazy">
                 <figcaption>Temple Manaus, Brazil</figcaption>
             </figure>
             <figure>
-                <img src="images/porto_alegre_brazil_temple_lds.webp" alt="Temple Porto Alegre">
+                <img src="images/porto_alegre_brazil_temple_lds.webp" alt="Temple Porto Alegre" loading="lazy">
                 <figcaption>Temple Porto Alegre, Brazil</figcaption>
             </figure>
             <figure>
-                <img src="images/recife_brazil_temple_lds.jpeg" alt="Temple Recife">
+                <img src="images/recife_brazil_temple_lds.jpeg" alt="Temple Recife" loading="lazy">
                 <figcaption>Temple Recife, Brazil</figcaption>
             </figure>
             <figure>
-                <img src="images/rio_de_janeiro_brazil_temple.jpeg" alt="Temple Rio de Janeiro">
+                <img src="images/rio_de_janeiro_brazil_temple.jpeg" alt="Temple Rio de Janeiro" loading="lazy">
                 <figcaption>Temple Rio de Janeiro, Brazil</figcaption>
             </figure>
             <figure>
-                <img src="images/sao_paulo_brazil_temple_lds.jpeg" alt="Temple Sao Paulo">
+                <img src="images/sao_paulo_brazil_temple_lds.jpeg" alt="Temple Sao Paulo" loading="lazy">
                 <figcaption>Temple Sao Paulo, Brazil</figcaption>
             </figure>
         </div>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; <span id="year"></span> ✨Soraya Skavinski✨ Brazil</p>
         <p id="lastModified"></p>
     </footer>

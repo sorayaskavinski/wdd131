@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #9012f8;
+    background-color: #6a0dad;
     color: #fff;
 }
 
@@ -25,6 +25,10 @@ nav ul {
     padding: 0;
     display: none; 
     flex-direction: column; 
+}
+
+nav ul .visible{
+    display: block;
 }
 
 nav ul li {
@@ -79,6 +83,6 @@ figure {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #781de7;
+    background-color: #6a0dad;
     color: #fff;
 }
