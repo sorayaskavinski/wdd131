@@ -1,8 +1,7 @@
 
 :root {
     --primary-color: #4CAF50; 
-    --secondary-color: #ffffff; 
-    --text-color: #333333; 
+    --secondary-color: #ffffff;
     --font-family: 'Arial', sans-serif;
 }
 
@@ -57,24 +56,32 @@ footer {
 
 #hero {
     width: 100%;
-    height: 300px; 
-    position: relative; 
+    height: 300px;    
     background-color: #333; 
 }
 
 #hero picture {
+    position: absolute;
     width: 100%;
-    height: 100%;
-    display: block; 
+    height: auto;
+    display: block;
+    object-fit: cover; 
+}
+.hero-content{
+    position: relative;
+    color: #ffffff;
+    z-index: 1;
+    text-align: left;
+    padding: 1rem;    
 }
 
 #hero img {
     width: 100%; 
-    height: 100%; 
+    height: auto; 
     object-fit: cover; 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
     #hero {
         height: 200px; 
     }
@@ -83,9 +90,9 @@ footer {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 200px) {
     #hero {
-        height: 150px; 
+        height: 100px; 
     }
     #hero img {
         object-fit: contain; 
