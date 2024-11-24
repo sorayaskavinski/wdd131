@@ -1,17 +1,11 @@
-*.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
 :root {
     --primary-color: #4CAF50; 
     --secondary-color: #ffffff;
-    --font-family: 'Arial', sans-serif;
+    --font-family: 'Roboto', sans-serif; 
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-family);  
     background-color: #f0f0f0; 
     margin: 0;
     padding: 0;
@@ -47,8 +41,10 @@ header h1 {
     margin-bottom: 10px;
 }
 
-#details {
-    padding: 20px;
+#weather h2::after {
+    content: url('images/cloud-sunny-icon.svg'); 
+    display: inline-block;
+    margin-left: 10px;
 }
 
 footer {
@@ -58,39 +54,27 @@ footer {
     padding: 10px 0;
 }
 
+
 #hero {
     width: 100%;
     height: 300px;    
-    background-color: #333; 
+    background-color: #333;
+    position: relative;
 }
 
 #hero picture {
-    position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .hero-content {
-    position: relative;
+    position: absolute;
     color: #ffffff;
     z-index: 1;
     text-align: left;
     padding: 1rem;
-}
-
-#hero img {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover;
-}
-
-#hero img::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
 }
 
 @media (max-width: 600px) {
@@ -98,7 +82,7 @@ footer {
         height: 200px; 
     }
     #hero img {
-        object-fit: contain;
+        object-fit: contain; 
     }
 }
 
@@ -109,7 +93,7 @@ footer {
 }
 
 #weather h2::after {
-    content: url('images/cloud-sunny-icon.svg'); 
+    content: url('images/cloud-sunny-icon.svg');
     display: inline-block;
     margin-left: 10px;
 }
