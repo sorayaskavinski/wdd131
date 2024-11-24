@@ -1,15 +1,18 @@
 :root {
-    --primary-color: #4CAF50; 
-    --secondary-color: #ffffff;
-    --font-family: 'Roboto', sans-serif;
-    --background-color: #f0f0f0; /* Added background color variable */
+    --primary-color: #4CAF50;         
+    --secondary-color: #ffffff;      
+    --font-family: 'Roboto', sans-serif; 
+    --background-color: #f0f0f0;     
+    --text-color: #333;               
+    --highlight-color: #00ff40;       
 }
 
 body {
     font-family: var(--font-family);
-    background-color: var(--background-color);  /* Use the background color variable */
+    background-color: var(--background-color); 
     margin: 0;
     padding: 0;
+    color: var(--text-color);            
 }
 
 header {
@@ -23,7 +26,6 @@ header h1 {
     margin: 0;
 }
 
-/* Section Box Style */
 .section-box {
     background-color: var(--secondary-color);
     padding: 20px;
@@ -32,7 +34,6 @@ header h1 {
     border-radius: 8px;
 }
 
-/* Weather Section Style */
 #weather {
     padding: 20px;
     background-color: var(--primary-color);
@@ -44,13 +45,13 @@ header h1 {
     margin-bottom: 10px;
 }
 
+
 #weather h2::after {
-    content: url('images/cloud-sunny-icon.svg');  /* Correct use of ::after */
+    content: url('images/cloud-sunny-icon.svg'); 
     display: inline-block;
     margin-left: 10px;
 }
 
-/* Hero Section Styling */
 #hero {
     width: 100%;
     height: 300px;    
