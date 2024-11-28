@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #4CAF50;         
+    --secondary-color: #ffffff;      
+    --font-family: 'Roboto', sans-serif; 
+    --background-color: #f0f0f0;     
+    --text-color: #333;               
+    --highlight-color: #00ff40;       
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color); 
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);            
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.section-box {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#weather {
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+#weather h2 {
+    margin-bottom: 10px;
+}
+
+
+#weather h2::after {
+    content: url('images/cloud-sunny-icon.svg'); 
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#hero {
+    width: 100%;
+    height: 300px;    
+    background-color: #333;
+    position: relative;
+}
+
+#hero picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    color: #ffffff;
+    z-index: 1;
+    text-align: left;
+    padding: 1rem;
+}
+
+@media (max-width: 600px) {
+    #hero {
+        height: 200px;
+    }
+    #hero img {
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 1000px) {
+    #hero {
+        height: 250px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

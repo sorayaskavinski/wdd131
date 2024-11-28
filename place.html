@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 | Soraya Skavinski | Place</title>
+        <meta name="description" content="WDD131 - Picture to show a place in Brazil">
+        <meta name="author" content="Soraya Skavinski">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="styles/place.css">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Amazonas - Brazil</h1>
+        </header>
+        <main>
+            <section id="hero">
+                <picture>
+                    <source srcset="images/arara.webp" media="(max-width: 500px)">
+                    <source srcset="images/arara-familia.webp" media="(max-width: 1000px)">
+                    <img src="images/arara-familia.jpg" alt="Hero image for Brazil">
+                </picture>
+            </section>             
+            <section id="data" class="section-box">
+                <h2>Data</h2>
+                <ul>
+                    <li>Area: 8.51 million Km²</li>
+                    <li>Population: 216.4million</li>
+                    <li>Capital: Brasilia</li>
+                    <li>Language: Portuguese</li>
+                    <li>Currency: Real</li>
+                    <li>Timezone: GMT-3</li>
+                    <li>Calling code: +55</li>
+                    <li>Internet TLD: .br</li>
+                </ul>       
+            </section>
+            <section id="weather" class="section-box">
+                <h2>Weather <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+                    <path d="M12 2C7.03 2 3 6.03 3 10.99c0 3.93 3.06 7.1 7.02 7.99l1.95 4.99c.3.81 1.2 1.28 2.09 1.28 1.2 0 2.26-.89 2.67-2.1L19 18.98c3.06-.96 5.3-3.93 5.3-7.98 0-4.97-4.03-8.99-9.3-8.99z"/>
+                    </svg>
+                </h2>
+                <img src="images/cloud-sunny-icon.png" alt="Weather icon">                
+                <p id="temperature">Temperature: 26°C</p>
+                <p id="windspeed">Wind Speed: 11 km/h</p>
+                <p id="windchill">Wind Chill: N/A</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="year"></span> 💕Soraya Skavinski💕</p>
+            <p> Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>
