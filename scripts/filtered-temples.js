@@ -130,10 +130,10 @@ function displayTemples(filteredTemples) {
 
 function filterTemples(criteria) {
     let filtered = temples;
-    if (criteria === 'old') filtered = temples.filter(t => new Date(t.dedicated).getFullYear() < 2000);
+    if (criteria === 'old') filtered = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
     if (criteria === 'new') filtered = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
-    if (criteria === 'large') filtered = temples.filter(t => parseInt(t.area) > 37000);
-    if (criteria === 'small') filtered = temples.filter(t => parseInt(t.area) < 20000);
+    if (criteria === 'large') filtered = temples.filter(t => parseInt(t.area) > 90000);
+    if (criteria === 'small') filtered = temples.filter(t => parseInt(t.area) < 10000);
     displayTemples(filtered);
 }
 
