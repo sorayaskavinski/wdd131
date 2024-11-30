@@ -109,6 +109,13 @@ const temples = [
         area:"18850",
         imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/joao-pessoa-brazil-temple/joao-pessoa-brazil-temple-50370-main.jpg"
     },
+    {
+        templeName:"Salt Lake Temple",
+        location:"Salt Lake City, UT",
+        dedicated:"24, April, 1893",
+        area: "382207",
+        imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
+    },
 ];
 
 function displayTemples(filteredTemples) {
