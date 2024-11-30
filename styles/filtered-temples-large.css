@@ -1,0 +1,17 @@
+
+@media screen and (min-width: 500px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 1rem;
+    }
+
+    #hamburger {
+        display: none; 
+    }
+
+    .temples-grid {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+}
