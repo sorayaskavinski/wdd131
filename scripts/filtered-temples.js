@@ -116,6 +116,20 @@ const temples = [
         area: "382207",
         imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
     },
+    {
+        templeName:"Yigo Guam Temple",
+        location:"Yigo, Guam",
+        dedicated:"22, May, 2022",
+        area:"6861",
+        imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/yigo-guam-temple/yigo-guam-temple-26495-main.jpg"
+    },
+    {
+        templeName:"Mesa Arizona Temple",
+        location:"Mesa, AZ",
+        dedicated:"26, October, 1927",
+        area:"75000",
+        imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/mesa-arizona-temple/mesa-arizona-temple-46561-main.jpg"
+    },
 ];
 
 function displayTemples(filteredTemples) {
