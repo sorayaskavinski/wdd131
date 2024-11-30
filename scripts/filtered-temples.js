@@ -13,8 +13,8 @@ const navMenu = document.querySelector('nav ul');
 
 hamburger.addEventListener('click', () => {
     const isVisible = navMenu.classList.toggle('visible');
-    hamburger.setAttribute('aria-expanded', isVisible);
-    hamburger.textContent = isVisible ? 'X' : '☰';
+    hamburger.setAttribute('aria-expanded', isVisible.toString());
+    hamburger.textContent = isVisible ? '✖' : '☰';
 });
 
 const temples = [
@@ -52,8 +52,8 @@ const temples = [
     },
     {
       templeName: "Belo Horizonte Brazil Temple",
-      location: "Belo Horizonte, Minas Gerais, Brazil",
-      dedicated: "estimated 2026",
+      location: "Belo Horizonte, Brazil",
+      dedicated: "",
       area: 27000,
       imageUrl:
       "https://churchofjesuschristtemples.org/assets/img/temples/belo-horizonte-brazil-temple/belo-horizonte-brazil-temple-22100-main.jpg"
@@ -68,7 +68,7 @@ const temples = [
     },
     {
       templeName: "Manaus Brazil Temple",
-      location: "Manaus, Amazonas, Brazil",
+      location: "Manaus, Brazil",
       dedicated: "2012, June, 10",
       area: 32032,
       imageUrl:
@@ -76,7 +76,7 @@ const temples = [
     },
     {
         templeName:"Porto Alegre Brazil Temple",
-        location:"Porto Alegre, Rio Grande do Sul, Brazil",
+        location:"Porto Alegre, Brazil",
         dedicated: "2000, December, 17",
         area: "13325",
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/porto-alegre-brazil-temple/porto-alegre-brazil-temple-14267-main.jpg"
@@ -90,58 +90,57 @@ const temples = [
     },
     {
         templeName:"Recife Brazil Temple",
-        location:"Recife, Pernambuco, Brazil",
+        location:"Recife, Brazil",
         dedicated:"2000, December, 15",
         area:"37200",
         imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/recife-brazil-temple/recife-brazil-temple-36778-main.jpg"
     },
     {
         templeName:"Maceio Brazil Temple",
-        location:"Maceio, Alagoas, Brazil",
+        location:"Maceio, Brazil",
         dedicated:"",
         area:"",
         imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/maceio-brazil-temple/maceio-brazil-temple-48800-main.jpg"
     },
     {
         templeName:"Joao Pessoa Brazil Temple",
-        location:"Joao Pessoa, Pernambuco, Brazil",
+        location:"Joao Pessoa, Brazil",
         dedicated:"",
         area:"18850",
         imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/joao-pessoa-brazil-temple/joao-pessoa-brazil-temple-50370-main.jpg"
     },
 ];
 
-const templeContainer = document.getElementById('temples-container');
-
 function displayTemples(filteredTemples) {
-    templeContainer.innerHTML = ''; // Clear current display
+    const templeContainer = document.getElementById('temples-container');
+    templeContainer.innerHTML = ''; 
     filteredTemples.forEach(temple => {
         const card = document.createElement('div');
         card.classList.add('temple-card');
         card.innerHTML = `
-            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
             <h3>${temple.templeName}</h3>
-            <p>Location: ${temple.location}</p>
-            <p>Dedicated: ${temple.dedicated || 'Not yet dedicated'}</p>
-            <p>Area: ${temple.area || 'N/A'} sq. ft.</p>
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+            <p><span>Location:</span> ${temple.location}</p>
+            <p><span>Dedicated:</span> ${temple.dedicated || 'Not yet dedicated'}</p>
+            <p><span>Area:</span> ${temple.area || 'N/A'} sq. ft.</p>            
         `;
         templeContainer.appendChild(card);
     });
 }
 
-function filteredTemples(criteria){
+function filterTemples(criteria) {
     let filtered = temples;
-    if (criteria === 'old') filtered = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
-    if (criteria ==='new') filtered = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
-    if (criteria === 'large') filtered = temples.filter( t => t.area > 90000);
-    if (criteria ==='small') filtered = temples.filter(t => t.area < 10000);
+    if (criteria === 'old') filtered = temples.filter(t => new Date(t.dedicated).getFullYear() < 2000);
+    if (criteria === 'new') filtered = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
+    if (criteria === 'large') filtered = temples.filter(t => parseInt(t.area) > 37000);
+    if (criteria === 'small') filtered = temples.filter(t => parseInt(t.area) < 20000);
     displayTemples(filtered);
 }
 
 document.getElementById('home').addEventListener('click', () => displayTemples(temples));
-document.getElementById('old').addEventListener('click', () => filteredTemples('old'));
-document.getElementById('new').addEventListener('click', () => filteredTemples('new'));
-document.getElementById('large').addEventListener('click', () => filteredTemples ('large'));
-document.getElementById('small').addEventListener('click', () => filteredTemples('small'));
+document.getElementById('old').addEventListener('click', () => filterTemples('old'));
+document.getElementById('new').addEventListener('click', () => filterTemples('new'));
+document.getElementById('large').addEventListener('click', () => filterTemples('large'));
+document.getElementById('small').addEventListener('click', () => filterTemples('small'));
 
 displayTemples(temples);

@@ -14,24 +14,23 @@
 <body>
     <header>
         <h1>Temple Album</h1>
-        <button id="hamburger" aria-label="Menu">☰</button>
+        <button id="hamburger" aria-label="Menu" aria-expanded="false">☰</button>
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="#" id="home">Home</a></li>
                 <li><a href="#" id="old">Old</a></li>
                 <li><a href="#" id="new">New</a></li>
                 <li><a href="#" id="large">Large</a></li>
-                <li><a href="#" target="small">Small</a></li>
+                <li><a href="#" id="small">Small</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Home</h2>
-        <div class="temples-grid" id="temples-container">        
-        </div>
+        <h2>Temple Picture Album</h2>
+        <div class="temples-grid" id="temples-container"></div>
     </main>
     <footer role="contentinfo">
-        <p>&copy; <span id="year"></span> ✨Soraya Skavinski✨ Brazil</p>
+        <p>&copy; <span id="year"></span> ✨ Soraya Skavinski ✨ Brazil</p>
         <p id="lastModified"></p>
     </footer>
 </body>
