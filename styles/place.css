@@ -6,6 +6,12 @@
     --highlight-color: #007f1e;       
 }
 
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 body {
     display: flex;
     flex-direction: column;
