@@ -1,0 +1,11 @@
+@media (min-width: 1000px) {
+    footer p span {
+        display: inline;
+    }
+}
+
+@media (max-width: 999px) {
+    footer p span {
+        display: none;
+    }
+}

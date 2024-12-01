@@ -4,15 +4,20 @@
     --font-family: 'Roboto', sans-serif; 
     --background-color: #f0f0f0;     
     --text-color: #333;               
-    --highlight-color: #00ff40;       
+    --highlight-color: #007f1e;       
 }
 
 body {
-    font-family: var(--font-family);
-    background-color: var(--background-color); 
-    margin: 0;
-    padding: 0;
-    color: var(--text-color);            
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;            
+}
+
+.section-box{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
 }
 
 header {
@@ -74,18 +79,12 @@ header h1 {
     padding: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
     #hero {
         height: 200px;
     }
     #hero img {
         object-fit: contain;
-    }
-}
-
-@media (max-width: 1000px) {
-    #hero {
-        height: 250px;
     }
 }
 
