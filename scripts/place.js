@@ -14,9 +14,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     document.getElementById('windchill').textContent = `Wind Chill: ${windChill}°C`;
 
-    const yearSpan = document.getElementById('year');
-    const lastModifiedSpan = document.getElementById('lastModified');
-
-    yearSpan.textContent = new Date().getFullYear();
-    lastModifiedSpan.textContent = document.lastModified;
 });
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const lastModifiedDate = new Date(document.lastModified);
+document.getElementById('lastModified').textContent =
+    `Last Updated: ${lastModifiedDate.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    })}`;

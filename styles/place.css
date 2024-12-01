@@ -1,9 +1,8 @@
 :root {
     --primary-color: #4CAF50;         
-    --secondary-color: #ffffff;  
-    --background-color: #f0f0f0;     
-    --text-color: #333;               
-    --highlight-color: #00ff40;       
+    --secondary-color: #ffffff;
+    --text-color: black;            
+      
 }
 
 .roboto-regular {
@@ -15,8 +14,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    padding: 0;
-    background-color: var(--background-color); 
+    padding: 0;    
     font-family: var(--font-family);
     color: var(--text-color);
 }
@@ -32,14 +30,19 @@ header h1 {
     margin: 0;
 }
 
-#hero {
-    width: 100%;
-    height: 100vh; 
+#hero {   
     background-image: url('images/arara-familia-large.webp'); 
-    background-size: cover; 
-    background-position: center; 
     background-repeat: no-repeat; 
-    position: relative;
+    position: behind;
+}
+
+#hero img{
+    border-radius: 2%;
+    margin-top: 1rem;
+    box-shadow:  4px 4px 4px 8px gray;
+    width: 100%;
+    height: auto;
+    
 }
 
 @media (min-width: 1000px) {
@@ -64,13 +67,16 @@ header h1 {
     background-color: var(--secondary-color);
     padding: 20px;
     margin: 20px 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
 #data {
-    font-size: 16px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
 }
+
+
 
 #data ul {
     list-style-type: none;
@@ -99,14 +105,15 @@ header h1 {
 }
 
 footer {
-    background-color: #333;
+    background-color: rgb(61, 60, 60);
     color: white;
     text-align: center;
     padding: 10px 0;
+    font-size: 14px;
 }
 
-footer p {
-    margin: 0;
+#lastModified{
+    font-size:10px;
 }
 
 @media (max-width: 600px) {
