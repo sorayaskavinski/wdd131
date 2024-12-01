@@ -1,7 +1,6 @@
 :root {
     --primary-color: #4CAF50;         
     --secondary-color: #ffffff;      
-    --font-family: 'Roboto', sans-serif; 
     --background-color: #f0f0f0;     
     --text-color: #333;               
     --highlight-color: #007f1e;       
@@ -11,7 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;            
+    gap: 20px;
+    font-family: "Roboto", sans-serif;         
 }
 
 .section-box{
