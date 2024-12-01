@@ -1,10 +1,15 @@
 :root {
     --primary-color: #4CAF50;         
-    --secondary-color: #ffffff;      
-    --font-family: 'Roboto', sans-serif; 
+    --secondary-color: #ffffff;  
     --background-color: #f0f0f0;     
     --text-color: #333;               
     --highlight-color: #00ff40;       
+}
+
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 html, body {
