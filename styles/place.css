@@ -58,7 +58,7 @@ header h1 {
     #hero {
         background-image: url('images/arara-familia-small.webp'); 
     }
-} /* This closing brace was missing! */
+} 
 
 .section-box {
     background-color: var(--secondary-color);
