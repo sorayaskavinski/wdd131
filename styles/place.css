@@ -46,14 +46,8 @@ header h1 {
     text-align: center;
 }
 
-#weather h2 {
-    margin-bottom: 10px;
-}
-
-
 #weather h2::after {
-    content: url('images/cloud-sunny-icon.svg'); 
-    display: inline-block;
+    content: '⛅';
     margin-left: 10px;
 }
 
@@ -79,14 +73,7 @@ header h1 {
     padding: 1rem;
 }
 
-@media (min-width: 600px) {
-    #hero {
-        height: 200px;
-    }
-    #hero img {
-        object-fit: contain;
-    }
-}
+
 
 footer {
     background-color: #333;
