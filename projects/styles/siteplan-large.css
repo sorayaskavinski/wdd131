@@ -1,0 +1,22 @@
+@media screen and (min-width: 1000px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    #picture{
+       width: 100%;
+       height: auto;
+    }
+
+    #picture img{
+        object-fit: cover;
+    }
+
+    #hamburger {
+        display: none; 
+    }
+    
+}

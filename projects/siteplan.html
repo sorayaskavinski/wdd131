@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Main page of Skavinski Steel, with the description and buttons: about us, projects and contact us">
-    <meta name="autor" content="Soraya Skavinski">
-    <title>Skavinski Steel - Site Plan</title>
+    <meta name="author" content="Soraya Skavinski">
+    <title>Skavinski Steel - Site Plan</title>    
     <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
     <script src="scripts/siteplan.js" defer></script>
 </head>
 <body>
     <header>
         <img src="images/logo.webp" width="60" alt="Logo">
         <h1> Skavinski Steel</h1>
-        <nav>
-            <button onclick="navigateTo('about')">About Us</button>
-            <button onclick="navigateTo('projects')">Projects</button>
-            <button onclick="navigateTo('contact')">Contact Us</button>
+        <button id="hamburger" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="siteplan.html" target="_blank">Home</a></li>
+                <li><a href="project.html" target="_blank">Project</a></li>
+                <li><a href="about.html" target="_blank">About Us</a></li>
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>               
+            </ul>
         </nav>
     </header>
     <main>
         <section id="picture">
-            <picture>
-                <img src="https://decorlit.com.br/wp-content/uploads/2024/01/obra-em-steel-frame.jpg" width="1128">
-            </picture>            
+            <img src="https://decorlit.com.br/wp-content/uploads/2024/01/obra-em-steel-frame.jpg" alt="Steel Frame Construction" width="1097">
         </section>
         <section id="purpose">
             <h2>Why choose steel frame construction</h2>
@@ -34,8 +37,7 @@
             <ul>
                 <p><strong>Resilience:</strong>  Steel is much stronger than wood or concrete, making it highly resistant to environmental stresses like wind, earthquakes, and heavy loads.</p>
                 <p><strong>Longevity</strong> It doesn’t warp, crack, or rot over time, ensuring a longer lifespan for structures.</p>
-            </ul>
-            
+            </ul>            
         </section>
         <section id="purpose2">
             <h2>2. Lightweight and Easy to Transport</h2>
@@ -82,20 +84,8 @@
             <ul>
                 <p><strong>Adaptability: </strong>Steel framing is ideal for both residential and commercial projects, as well as renovations and expansions.</p>
                 <p><strong>Green Building Certifications: </strong>It supports achieving green building standards like LEED, which is increasingly important in modern construction.</p>
-            </ul>         
-        </section>
-        <section id="scenarios">
-            
-        </section>
-        <section id="color-schema">
-            
-        </section>
-        <section id="typography">
-           
-        </section>
-        <section id="wireframe">
-            
-        </section>
+            </ul>   
+        </section>  
     </main>
     <footer>
         <p>&copy; <span id="year"></span> --  Skavinski Steel -- All rights reserved </p>
