@@ -81,15 +81,15 @@ nav ul li a:hover {
 }
 
 .carousel-track {
+    width: 100%;
     display: flex;
     transition: transform 0.4s ease-in-out;
 }
 
 .carousel img {
     width: 100%; 
-    height: auto; 
-    object-fit: cover; 
-    max-height: 400px; 
+    height: auto;    
+    object-fit: cover;     
 }
 
 .carousel-buttons {
