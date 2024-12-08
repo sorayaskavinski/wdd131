@@ -140,11 +140,11 @@ footer {
 
 
 @media screen and (min-width: 1000px) {
-    nav ul {
+    nav ul {        
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
         gap: 1rem;
+        flex-direction: row;
     }
     #picture{
         width: 100%;

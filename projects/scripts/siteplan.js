@@ -8,11 +8,8 @@ document.getElementById('lastModified').textContent =
         day: 'numeric',
     })}`;
 
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.querySelector('nav ul');
+document.getElementById("hamburger").addEventListener("click", function() {
+    const nav = document.querySelector("nav ul");
+    nav.classList.toggle("visible");
+});
 
-hamburger.addEventListener('click', () => {
-    const isVisible = navMenu.classList.toggle('visible');
-    hamburger.setAttribute('aria-expanded', isVisible);
-    hamburger.textContent = isVisible ? '✖' : '☰';
-});    
