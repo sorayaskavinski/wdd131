@@ -29,7 +29,7 @@ header {
 header img {
     height: 120px;
     width: auto;
-    padding: 0%;
+    padding: 0%;    
 }
 
 header h1 {
@@ -71,7 +71,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-#picture {
+.picture {
     width: 100%;
     height: auto;
     display: grid;
@@ -81,7 +81,7 @@ nav ul li a:hover {
     align-items: center;
 }
 
-#picture img {
+.picture img {
     max-width: 100%;
     height: auto;
     object-fit: cover;    
@@ -151,12 +151,12 @@ footer {
         gap: 1rem;
         flex-direction: row;
     }
-    #picture{
+    .picture{
         width: 100%;
         height: auto;
      }
  
-     #picture img{
+     .picture img{
          object-fit: cover;
      }
 
@@ -164,3 +164,4 @@ footer {
         display: none;
     }
 }
+
