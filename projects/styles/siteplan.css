@@ -21,8 +21,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+    justify-content: space-between;    
     background-color: var(--background-color);
     color: var(--color);
 }
@@ -30,6 +29,7 @@ header {
 header img {
     height: 120px;
     width: auto;
+    padding: 0%;
 }
 
 header h1 {
