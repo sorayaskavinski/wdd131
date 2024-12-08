@@ -15,4 +15,4 @@ hamburger.addEventListener('click', () => {
     const isVisible = navMenu.classList.toggle('visible');
     hamburger.setAttribute('aria-expanded', isVisible);
     hamburger.textContent = isVisible ? '✖' : '☰';
-});
+});    
