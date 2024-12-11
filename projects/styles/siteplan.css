@@ -5,6 +5,11 @@
     --background-color2: #d4d7dbeb;
 }
 
+
+html{
+    display: block;
+}
+
 body, h1, h2, p, ul, li, button {   
     margin: 0;
     padding: 0;
@@ -15,15 +20,15 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: var(--color);
-    color: var(--color2);
+    display: block;    
 }
 
-header {
+header {    
     display: flex;
-    align-items: center;
+    unicode-bidi: isolate;
     justify-content: space-between;    
     background-color: var(--background-color);
-    color: var(--color);
+    color: var(--color);   
 }
 
 header img {
@@ -35,7 +40,8 @@ header img {
 header h1 {
     font-family: 'Merriweather', serif;
     font-size: 25px;
-    margin: 0;
+    margin-left: 20%; 
+    margin-top: 8%;   
 }
 
 nav ul {
@@ -43,6 +49,7 @@ nav ul {
     display: none;
     flex-direction: column;
     padding: 0;
+    margin-top: 7%;
 }
 
 nav ul.visible {
@@ -68,7 +75,8 @@ nav ul li a:hover {
     border: none;
     font-size: 1.5rem;
     color: var(--color);
-    cursor: pointer;
+    cursor: pointer; 
+   
 }
 
 .picture {
@@ -151,6 +159,10 @@ footer {
         gap: 1rem;
         flex-direction: row;
     }
+
+    header h1{
+        margin-top: 3%;
+    }
     .picture{
         width: 100%;
         height: auto;
@@ -161,7 +173,6 @@ footer {
      }
 
     #hamburger {
-        display: none;
+        display: none;        
     }
 }
-
