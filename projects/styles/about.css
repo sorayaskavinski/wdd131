@@ -1,0 +1,204 @@
+:root {
+    --background-color: #01305f;
+    --color: #fff;
+    --color2: black;
+    --background-color2: #d4d7dbeb;
+}
+
+body, h1, h2, p, ul, li, button {   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: var(--color);
+    color: var(--color2);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+header img {
+    height: 120px;
+    width: auto;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    padding: 0;
+}
+
+nav ul.visible {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--color);
+    cursor: pointer;
+}
+
+.background-container {
+    position: relative;
+    background-image: url('https://www.manseametal.com/cm/dpl/images/articles/28/main/28.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    text-align: center;
+    padding: 2rem;
+}
+
+.background-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.content {
+    position: relative;
+    margin-bottom: 20%;
+    z-index: 2; 
+    padding: 2rem;
+    background: rgba(5, 5, 5, 0.184); 
+    border-radius: 8px; 
+    max-width: 800px;
+}
+
+.content h2{
+    font-size: 40px;
+    padding-bottom: 3rem;
+    margin-top: 0%;
+}
+
+.content p{
+    font-size: 20px;
+}
+
+
+.container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1100px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 0%;
+    text-align: center;
+}
+
+section {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    background-color: var(--background-color2);
+    color: var(--color2);
+    text-align: center;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 8px 8px 0 0;    
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+strong {
+    font-weight: bold;
+    color: var(--color2);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--color);
+    padding: 3rem 0;
+}
+
+#lastModified {
+    font-size: 12px;
+}
+
+.supermarket, .variety {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    padding: 0;
+    border-radius: 8px;       
+}
+
+.variety {
+    margin-bottom: 0.5%;
+}
+
+
+.supermarket img, .variety img {
+    border-radius: 8px;  
+   
+}
+
+@media screen and (min-width: 1000px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        gap: 1rem;
+    }    
+
+    #hamburger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+
+}

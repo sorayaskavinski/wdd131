@@ -32,7 +32,7 @@ header {
 }
 
 header img {
-    height: 120px;
+    height: 180px;
     width: auto;
     padding: 0%;    
 }
@@ -76,6 +76,7 @@ nav ul li a:hover {
     font-size: 1.5rem;
     color: var(--color);
     cursor: pointer; 
+    margin-left: 20%;
    
 }
 
@@ -174,5 +175,12 @@ footer {
 
     #hamburger {
         display: none;        
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    #purpose1, #purpose2, #purpose3, #purpose4,
+    #purpose5, #purpose6, #purpose7, #purpose8 {    
+    max-width: 90%; 
     }
 }

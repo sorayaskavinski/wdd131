@@ -220,4 +220,16 @@ footer {
     .carousel img {
         max-height: 300px; 
     }
+
+    .supermarket img{
+        max-width: 100%;
+    }
+
+    .container{
+        max-width: 95%;
+    }
+
+    .variety img{
+        max-width: 100%;
+    }
 }
