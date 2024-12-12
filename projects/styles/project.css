@@ -2,7 +2,7 @@
     --background-color: #01305f;
     --color: #fff;
     --color2: black;
-    --background-color2: #d4d7dbeb;
+    --background-color2: #a9c0de79;
 }
 
 body, h1, h2, p, ul, li, button {   
@@ -73,7 +73,7 @@ nav ul li a:hover {
 .carousel {
     overflow: hidden;
     width: 100%;
-    max-width: 600px; 
+    max-width: 700px; 
     margin: 1rem auto;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -122,34 +122,28 @@ h2 {
     margin-bottom:0.5%;    
 }
 
-.container {
+.container{
     display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 1100px;
-    width: 100%;
-    padding: 10px;
-    margin-top: 0%;
-    text-align: center;
+    margin-top: 1%;    
 }
-
-section {
-    flex: 1;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.advantages, .disadvantages {
+    display: block;      
+    padding: 1rem;    
+    background:var(--background-color2); 
+    border-radius: 8px; 
+    max-width: 800px;
+    max-height: auto;
+    border: 1px solid black;
 }
 
 h3 {
-    background-color: var(--background-color2);
-    color: var(--color2);
+    background-color:var(--background-color);
+    color: var(--color);
     text-align: center;
-    padding: 10px;
-    margin: -20px -20px 20px -20px;
-    border-radius: 8px 8px 0 0;    
+    padding: 5px;
+    margin-top: 0%;    
+    border-radius: 8px 8px 0 0;
+    border: 2px solid black;   
 }
 
 p {
@@ -223,10 +217,11 @@ footer {
 
     .supermarket img{
         max-width: 100%;
+        width: 500px;
     }
 
     .container{
-        max-width: 95%;
+        max-width: 100%;
     }
 
     .variety img{

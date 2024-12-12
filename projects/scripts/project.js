@@ -17,27 +17,31 @@ hamburger.addEventListener('click', () => {
     hamburger.textContent = isVisible ? '✖' : '☰';
 });
 
-const track = document.querySelector('.carousel-track');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
+const carousels = document.querySelectorAll('.carousel');
 
-let currentIndex = 0;
+carousels.forEach((carousel) => {
+    const track = carousel.querySelector('.carousel-track');
+    const prevButton = carousel.querySelector('.prev');
+    const nextButton = carousel.querySelector('.next');
 
-function updateCarousel() {
-  const width = track.children[0].clientWidth;
-  track.style.transform = `translateX(${-width * currentIndex}px)`;
-}
+    let currentIndex = 0;
 
-nextButton.addEventListener('click', () => {
-  if (currentIndex < track.children.length - 1) {
-    currentIndex++;
-    updateCarousel();
-  }
-});
+    function updateCarousel() {
+        const width = track.children[0].clientWidth;
+        track.style.transform = `translateX(${-width * currentIndex}px)`;
+    }
 
-prevButton.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateCarousel();
-  }
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < track.children.length - 1) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
 });
