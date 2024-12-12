@@ -17,22 +17,20 @@ hamburger.addEventListener('click', () => {
     hamburger.textContent = isVisible ? '✖' : '☰';
 });
 
-const carousels = document.querySelectorAll('.carousel');
-
-carousels.forEach((carousel) => {
+document.querySelectorAll('.carousel').forEach((carousel) => {
     const track = carousel.querySelector('.carousel-track');
     const prevButton = carousel.querySelector('.prev');
     const nextButton = carousel.querySelector('.next');
-
+    const items = track.children;
     let currentIndex = 0;
 
     function updateCarousel() {
-        const width = track.children[0].clientWidth;
-        track.style.transform = `translateX(${-width * currentIndex}px)`;
+        const width = items[0].getBoundingClientRect().width;
+        track.style.transform = `translateX(${-currentIndex * width}px)`;
     }
 
     nextButton.addEventListener('click', () => {
-        if (currentIndex < track.children.length - 1) {
+        if (currentIndex < items.length - 1) {
             currentIndex++;
             updateCarousel();
         }
@@ -44,4 +42,6 @@ carousels.forEach((carousel) => {
             updateCarousel();
         }
     });
+   
+    window.addEventListener('resize', updateCarousel);
 });
