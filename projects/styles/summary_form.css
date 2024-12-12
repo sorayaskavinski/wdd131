@@ -1,0 +1,45 @@
+:root {
+    --background-color: #01305f;
+    --color: #fff;
+    --color2: black;
+    --background-color2: #a9c0de79;
+}
+
+body, h1, h2, p, ul, li, button {   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: var(--color);
+    color: var(--color2);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--color);    
+}
+
+header img {
+    height: 120px;
+    width: auto;    
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    padding-left: 4rem;
+}
+
+
+footer {
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--color);
+    padding: 1rem;
+}

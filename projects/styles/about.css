@@ -175,6 +175,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .about{
+        display: block;
+    }
     
-
+    .about img{
+        width: auto;
+    }
 }

@@ -17,31 +17,33 @@ hamburger.addEventListener('click', () => {
     hamburger.textContent = isVisible ? '✖' : '☰';
 });
 
-document.querySelectorAll('.carousel').forEach((carousel) => {
+const carousels = document.querySelectorAll('.carousel');
+
+carousels.forEach(carousel => {
     const track = carousel.querySelector('.carousel-track');
     const prevButton = carousel.querySelector('.prev');
     const nextButton = carousel.querySelector('.next');
-    const items = track.children;
+    const images = Array.from(track.children);
+
     let currentIndex = 0;
 
-    function updateCarousel() {
-        const width = items[0].getBoundingClientRect().width;
-        track.style.transform = `translateX(${-currentIndex * width}px)`;
-    }
+    const updateCarousel = () => {
+        const trackWidth = carousel.offsetWidth;
+        track.style.transform = `translateX(-${currentIndex * trackWidth}px)`;
+    };
 
-    nextButton.addEventListener('click', () => {
-        if (currentIndex < items.length - 1) {
-            currentIndex++;
-            updateCarousel();
-        }
-    });
+    const showPrevImage = () => {
+        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+        updateCarousel();
+    };
 
-    prevButton.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateCarousel();
-        }
-    });
-   
+    const showNextImage = () => {
+        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        updateCarousel();
+    };
+
+    prevButton.addEventListener('click', showPrevImage);
+    nextButton.addEventListener('click', showNextImage);
+
     window.addEventListener('resize', updateCarousel);
 });

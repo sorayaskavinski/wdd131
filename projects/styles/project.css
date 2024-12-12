@@ -72,8 +72,7 @@ nav ul li a:hover {
 
 .carousel {
     overflow: hidden;
-    width: 100%;
-    max-width: 700px; 
+    width: 100%;   
     margin: 1rem auto;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -91,10 +90,8 @@ nav ul li a:hover {
     object-fit: cover;     
 }
 
-.carousel-buttons {
-    position: relative;    
-    display: flex;
-    justify-content: center;
+.carousel-buttons {       
+    display: flex;    
     gap: 3rem;    
 }
 
@@ -109,6 +106,17 @@ nav ul li a:hover {
 
 .carousel-buttons button:hover {
     background: rgba(0, 0, 0, 0.9);
+}
+#carousel1{
+    max-width: 700px;
+}
+
+#carousel2{
+    max-width: 800px;
+}
+
+#carousel3{
+    max-width: 500px;
 }
 
 h2 {
@@ -207,24 +215,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .carousel {
-        max-width: 90%;
+    #carousel1,#carousel2, #carousel3 {
+        max-width: 95%;
     }
-
-    .carousel img {
-        max-height: 300px; 
-    }
-
-    .supermarket img{
-        max-width: 100%;
-        width: 500px;
-    }
-
+    
     .container{
-        max-width: 100%;
-    }
-
-    .variety img{
         max-width: 100%;
     }
 }
