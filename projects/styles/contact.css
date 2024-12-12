@@ -85,6 +85,8 @@ form {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 fieldset {
@@ -134,6 +136,24 @@ footer {
     padding: 1rem;
 }
 
+.info{
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 4%; 
+}
+
+.info img{
+    padding-right: 1rem;
+}
+
+.info1{
+    padding-left: 3rem;
+}
+
+.info2{
+    padding-left: 3rem;
+    color: var(--background-color2);
+}
 
 @media screen and (min-width: 1000px) {
     nav ul {
