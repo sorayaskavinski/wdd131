@@ -74,7 +74,7 @@ nav ul li a:hover {
     position: relative;
     background-image: url('https://www.manseametal.com/cm/dpl/images/articles/28/main/28.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center;   
     height: 100vh; 
     display: flex;
     justify-content: center;
@@ -82,6 +82,7 @@ nav ul li a:hover {
     color: #fff; 
     text-align: center;
     padding: 2rem;
+    margin-top: 1%;
 }
 
 .background-container::before {
@@ -96,65 +97,48 @@ nav ul li a:hover {
 }
 
 .content {
-    position: relative;
-    margin-bottom: 20%;
-    z-index: 2; 
+    position: relative;       
+    z-index: 1; 
     padding: 2rem;
     background: rgba(5, 5, 5, 0.184); 
     border-radius: 8px; 
     max-width: 800px;
+    max-height: auto;
 }
 
 .content h2{
-    font-size: 40px;
-    padding-bottom: 3rem;
-    margin-top: 0%;
+    font-size: 30px;
+    padding-bottom: 2rem;   
 }
 
 .content p{
-    font-size: 20px;
+    font-size: 18px;
 }
 
-
-.container {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 1100px;
-    width: 100%;
-    padding: 10px;
-    margin-top: 0%;
+h2{
     text-align: center;
+    padding: 1rem;
 }
 
-section {
-    flex: 1;
-    background-color: #fff;
-    border: 1px solid #ddd;
+.about {   
+    display: flex;    
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgba(63, 60, 60, 0.9);
+    margin-bottom: 1%;
+    color: var(--color);
+}
+
+.about img{
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    margin-top: 2%;
     border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border:2px solid rgb(11, 11, 11) ;     
 }
 
-h3 {
-    background-color: var(--background-color2);
-    color: var(--color2);
-    text-align: center;
-    padding: 10px;
-    margin: -20px -20px 20px -20px;
-    border-radius: 8px 8px 0 0;    
-}
-
-p {
-    margin: 10px 0;
-    line-height: 1.6;
-}
-
-strong {
-    font-weight: bold;
-    color: var(--color2);
-}
 
 footer {
     text-align: center;
@@ -167,23 +151,6 @@ footer {
     font-size: 12px;
 }
 
-.supermarket, .variety {
-    display: flex;
-    justify-content: space-evenly;
-    border: 2px solid black;
-    padding: 0;
-    border-radius: 8px;       
-}
-
-.variety {
-    margin-bottom: 0.5%;
-}
-
-
-.supermarket img, .variety img {
-    border-radius: 8px;  
-   
-}
 
 @media screen and (min-width: 1000px) {
     nav ul {
@@ -195,6 +162,15 @@ footer {
 
     #hamburger {
         display: none;
+    }
+
+    .content h2{
+        font-size: 40px;
+        padding-bottom: 3rem;   
+    }
+    
+    .content p{
+        font-size: 25px;
     }
 }
 
