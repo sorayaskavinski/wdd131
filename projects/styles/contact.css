@@ -137,23 +137,40 @@ footer {
 }
 
 .info{
-    display: flex;
-    margin-top: 4%;
-    margin-bottom: 4%; 
+    padding-bottom: 3rem;
 }
 
-.info img{
-    padding-right: 1rem;
+.whatsapp-button, .instagram-button {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #25d366; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.info1{
-    padding-left: 3rem;
+.instagram-button {
+    background-color: #E4405F;
+
+.whatsapp-button:hover, .instagram-button:hover {
+    background-color: #128C7E; 
+    transform: scale(1.1); 
 }
 
-.info2{
-    padding-left: 3rem;
-    color: var(--background-color2);
+.icon {
+    width: 30px; 
+    height: 30px; 
+    object-fit: contain; 
 }
+
+.whatsapp-button, .instagram-button {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.whatsapp-button:focus, .instagram-button:focus {
+    outline: 3px solid #ffcc00; 
+}
+
 
 @media screen and (min-width: 1000px) {
     nav ul {
