@@ -31,5 +31,5 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     
     localStorage.setItem('formData', JSON.stringify(formData));
     
-    window.location.href = 'projects/summary_form.html';
+    window.location.href = 'summary_form.html';
 });
