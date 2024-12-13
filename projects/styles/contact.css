@@ -81,12 +81,12 @@ main {
 
 form {
     background-color: var(--background-color2);
-    padding: 1.5rem; /* Reduced padding for a smaller form */
+    padding: 1.5rem; 
     border-radius: 10px;
     border: 1px solid var(--background-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 450px; /* Reduced max-width for a smaller form */
+    max-width: 450px; 
     margin-top: 1%;
     margin-bottom: 1%;
 }
@@ -97,7 +97,7 @@ fieldset {
 }
 
 legend {
-    font-size: 1.25rem; /* Reduced font-size */
+    font-size: 1.25rem; 
     font-weight: bold;
     color: var(--background-color);
     margin-bottom: 1rem;
@@ -106,17 +106,17 @@ legend {
 
 label {
     display: block;
-    margin: 0.75rem 0 0.25rem; /* Reduced margins for smaller spacing */
+    margin: 0.75rem 0 0.25rem; 
     font-weight: bold;
 }
 
 input, select, textarea, button {
     width: 100%;
-    padding: 0.6rem; /* Reduced padding for smaller form elements */
+    padding: 0.6rem; 
     margin-bottom: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 0.9rem; /* Reduced font-size for smaller inputs */
+    font-size: 0.9rem; 
 }
 
 button {
@@ -124,7 +124,7 @@ button {
     color: var(--color);
     border: none;
     cursor: pointer;
-    font-size: 1rem; /* Reduced font-size for buttons */
+    font-size: 1rem;
 }
 
 button:hover {
