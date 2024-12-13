@@ -90,17 +90,15 @@ nav ul li a:hover {
     object-fit: cover;     
 }
 
-.carousel-buttons {       
+.carousel-buttons1, .carousel-buttons2, .carousel-buttons3 {       
     display: flex;
     justify-content: center;   
-    gap: 3rem;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);
+    gap: 3rem;   
+    top: 40%;
+    width: 100%;    
 }
 
-.carousel-buttons button {
+.carousel-buttons1 button,.carousel-buttons2 button,.carousel-buttons3 button {
     background: black;
     color: #fff;
     border: none;   
@@ -114,7 +112,7 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-.carousel-buttons button:hover {
+.carousel-buttons1 button:hover, .carousel-buttons2 button:hover, .carousel-buttons3 button:hover {
     background: rgba(0, 0, 0, 0.9);
 }
 #carousel1{
