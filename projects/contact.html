@@ -16,7 +16,7 @@
     <header>
         <a href="siteplan.html">
             <img src="images/logo.webp" width="60" alt="Logo">
-        </a>  
+        </a>
         <h1> Contact Us</h1>
         <button id="hamburger" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         <nav aria-label="Main Navigation">
@@ -24,10 +24,11 @@
                 <li><a href="siteplan.html" target="_blank">Home</a></li>
                 <li><a href="project.html" target="_blank">Project</a></li>
                 <li><a href="about.html" target="_blank">About Us</a></li>
-                <li><a href="contact.html" target="_blank">Contact Us</a></li>               
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <form id="contactForm">
             <fieldset>
@@ -44,6 +45,7 @@
 
                 <label for="topic">Select a Topic:</label>
                 <select id="topic" name="topic" required>
+                    <option value="" disabled selected>Select a topic</option> 
                     <option value="quote">Quote</option>
                     <option value="questions">Questions</option>
                     <option value="compliments">Compliments</option>
@@ -58,20 +60,21 @@
         </form>
     </main>
 
-    <footer>        
-        <div class="info"></div>
+    <footer>
+        <div class="info">
             <a href="https://wa.me/5511982192411" target="_blank" class="whatsapp-button" aria-label="Contact us on WhatsApp" rel="noopener noreferrer">
                 <img src="images/whatsapp.jpeg" width="30" alt="WhatsApp" class="icon">
             </a>
             <a href="https://www.instagram.com/fabio_skavinski" target="_blank" class="instagram-button" aria-label="Visit us on Instagram" rel="noopener noreferrer">
                 <img src="images/instagram_icon.jpeg" width="30" alt="Instagram" class="icon">
-            </a>        
-            <p>+55 (11)98219-2411</p>            
-            <p>✉ fskavinski@gmail.com</p>            
+            </a>
+            <p>+55 (11)98219-2411</p>
+            <p>✉ fskavinski@gmail.com</p>
         </div>
-        <div class="info2">    
+
+        <div class="info2">
             <p>&copy; <span id="year"></span> Skavinski Steel. All rights reserved.</p>
         </div>
-    </footer>   
+    </footer>
 </body>
 </html>
