@@ -64,8 +64,9 @@ nav ul li a:hover {
     border: none;
     font-size: 1.5rem;
     color: var(--color);
-    cursor: pointer; 
-    margin-left: 20%;   
+    cursor: pointer;     
+    margin: 20%; 
+
 }
 
 .background-container {

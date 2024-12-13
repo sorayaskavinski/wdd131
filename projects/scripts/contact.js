@@ -25,7 +25,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     
     localStorage.setItem('formData', JSON.stringify(formData));
     
-    window.location.href = 'summary_form.html';
+    window.location.href = 'form-data.html';
 
     console.log('Form Data:', formData);
     console.log('Stored Data:', localStorage.getItem('formData'));

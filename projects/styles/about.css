@@ -68,6 +68,10 @@ nav ul li a:hover {
     font-size: 1.5rem;
     color: var(--color);
     cursor: pointer;
+    padding: 1rem; 
+    width: auto; 
+    height: auto; 
+    margin: 0; 
 }
 
 .background-container {
@@ -143,14 +147,17 @@ h2{
 footer {
     text-align: center;
     background-color: var(--background-color);
-    color: var(--color);
-    padding: 3rem 0;
+    color: var(--color);   
+    padding-bottom: 1rem; 
+    font-size: 12px;   
 }
 
-#lastModified {
-    font-size: 12px;
+.info{
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    font-size: 16px;
 }
-
 
 @media screen and (min-width: 1000px) {
     nav ul {
@@ -158,28 +165,9 @@ footer {
         grid-template-columns: repeat(4, 1fr);
         justify-content: center;
         gap: 1rem;
-    }    
+    }   
 
     #hamburger {
         display: none;
-    }
-
-    .content h2{
-        font-size: 40px;
-        padding-bottom: 3rem;   
-    }
-    
-    .content p{
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .about{
-        display: block;
-    }
-    
-    .about img{
-        width: auto;
     }
 }
