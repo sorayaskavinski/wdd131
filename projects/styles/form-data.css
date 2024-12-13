@@ -21,25 +21,89 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;  
     background-color: var(--background-color);
-    color: var(--color);    
+    color: var(--color);
 }
 
 header img {
     height: 120px;
-    width: auto;    
+    width: auto;
 }
 
 header h1 {
     font-family: 'Merriweather', serif;
     font-size: 25px;
-    padding-left: 4rem;
+    margin: 0;
 }
 
+nav ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    padding: 0;
+}
+
+nav ul.visible {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--color);
+    cursor: pointer;
+}
+
+main{
+    height: 25rem;
+}
 
 footer {
     text-align: center;
     background-color: var(--background-color);
     color: var(--color);
     padding: 1rem;
+}
+
+
+#lastModified{
+    font-size: 12px;
+}
+
+
+@media screen and (min-width: 1000px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        gap: 1rem;
+    }
+    #carousel{
+        width: 100%;
+        height: auto;
+     }
+ 
+    #carousel img{
+         object-fit: cover;
+     }
+
+    #hamburger {
+        display: none;
+    }
 }

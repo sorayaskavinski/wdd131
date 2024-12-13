@@ -197,13 +197,16 @@ footer {
     font-size: 12px;   
 }
 
+.instagram-button{
+    padding-left: 1rem;   
+}
+
 .info{
     text-align: center;
     padding-bottom: 1rem;
     padding-top: 1rem;
     font-size: 16px;
 }
-
 
 @media screen and (min-width: 1000px) {
     nav ul {
