@@ -131,12 +131,15 @@ button:hover {
 footer {
     text-align: center;
     background-color: var(--background-color);
-    color: var(--color);
-    padding: 1rem;
+    color: var(--color);    
+    font-size: 12px;   
 }
 
-.info {
-    padding-bottom: 3rem;
+.info{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 16px;
 }
 
 .whatsapp-button, .instagram-button {

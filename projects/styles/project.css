@@ -172,21 +172,6 @@ strong {
     color: var(--color2);
 }
 
-footer {
-    text-align: center;
-    background-color: var(--background-color);
-    color: var(--color);    
-    font-size: 12px;   
-}
-
-.info{
-    text-align: center;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    font-size: 16px;
-}
-
-
 .supermarket, .variety {
     display: flex;
     justify-content: space-evenly;
@@ -204,6 +189,21 @@ footer {
     border-radius: 8px;  
    
 }
+
+footer {
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--color);    
+    font-size: 12px;   
+}
+
+.info{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 16px;
+}
+
 
 @media screen and (min-width: 1000px) {
     nav ul {
